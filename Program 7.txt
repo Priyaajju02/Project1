@@ -1,0 +1,28 @@
+Program 7:Uses of Map
+
+package PracticalProjects;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Map;
+import java.util.Vector;
+
+public class UsesOfMap {
+	public static void main(String args[]){  
+		  Map<Integer,String> map=new HashMap<Integer,String>();  
+		  map.put(1,"Lakshmi");  
+		  map.put(2,"Nomitha");  
+		  map.put(3,"Prathyusha");    
+		  for(Map.Entry m:map.entrySet()){  
+		   System.out.println(m.getKey()+" "+m.getValue());  
+		  }  
+		 }  
+	 
+
+}
+
+Output:
+
+1 Lakshmi
+2 Nomitha
+3 Prathyusha
