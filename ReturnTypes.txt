@@ -1,0 +1,39 @@
+Program 4:Methods of Different Return Types
+
+package PracticalProjects;
+
+import java.util.Scanner;
+
+public class RetunTypesMethods {
+	 public int CompareNum()   
+	    {   
+	    	Scanner sc = new Scanner(System.in);
+	    	System.out.println("Enter a value");
+	    	int a = sc.nextInt();
+	    	System.out.println("Entery b value");
+	        int b = sc.nextInt();  
+	        System.out.println("a = " + a + "\nb = " + b);  
+	        if(a>b)  
+	            return a;  
+	        else  
+	            return b;  
+	    }   
+	    public static void main(String args[])   
+	    {  
+	       RetunTypesMethods obj = new RetunTypesMethods();  
+	        int result = obj.CompareNum();  
+	        System.out.println("The greater number among a and b is: " + result);  
+	    }  
+
+
+}
+
+Output:
+
+Enter a value
+10
+Entery b value
+20
+a = 10
+b = 20
+The greater number among a and b is: 20
